@@ -1,0 +1,283 @@
+/*------------------
+      general
+------------------*/
+@font-face {
+  font-family: 'BrandonGrotesque-Medium';
+  src: url('BrandonGrotesque-Medium.eot');
+  src: url('BrandonGrotesque-Medium.woff2') format('woff2'),
+       url('BrandonGrotesque-Medium.woff') format('woff'),
+       url('BrandonGrotesque-Medium.ttf') format('truetype'),
+       url('BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MrsEavesOT-Italic';
+  src: url('MrsEavesOT-Italic.eot');
+  src: url('MrsEavesOT-Italic.woff2') format('woff2'),
+       url('MrsEavesOT-Italic.woff') format('woff'),
+       url('MrsEavesOT-Italic.ttf') format('truetype'),
+       url('MrsEavesOT-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, span, a {
+  font-style: normal;
+  font-weight: normal;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+       -o-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+article {
+  position: relative;
+  clear: both;
+  padding-top: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+  article {
+    padding-top: 17rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  article {
+    padding-top: 20rem;
+  }
+}
+
+
+/*------------------
+       fonts
+------------------*/
+.title {
+  padding-bottom: 1.5rem;
+  font-family: 'BrandonGrotesque-Medium';
+  font-size: 2rem;
+  letter-spacing: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: 'MrsEavesOT-Italic';
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    padding-bottom: 3rem;
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+  }
+}
+
+/*------------------
+   header and nav
+------------------*/
+header {
+  position: absolute;
+  z-index: 1;
+  height: 7rem;
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  height: 7rem;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.logo a {
+  display: block;
+  font-family: 'BrandonGrotesque-Medium';
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: .5rem;
+  line-height: 7rem;
+  border-bottom: double rgba(0,0,0,.15);
+  text-transform: uppercase;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-mobile {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-mobile__item {
+  font-family: 'MrsEavesOT-Italic';
+  font-size: 1.8rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.nav-mobile__item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 5rem;
+  }
+  nav {
+    position: absolute;
+    height: 7rem;
+    top: 7rem;
+    border-bottom: double rgba(0,0,0,.15);
+    border-top: double rgba(0,0,0,.15);
+  }
+  .logo a {
+    line-height: 7rem;
+  }
+  .nav-mobile__item {
+    font-size: 2.2rem;
+    line-height: 5rem;
+  }
+}
+
+
+/*------------------
+     grid images
+------------------*/
+.grid-row {
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-row {
+    padding-bottom: 10rem;
+  }
+}
+
+
+/*------------------
+       footer
+------------------*/
+footer {
+  margin-top: 5rem;
+  margin-bottom: 8.5rem;
+  border-top: double rgba(0,0,0,.15);
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-bottom: 0;
+  }
+}
+
+.hashtag {
+  margin: 1.5rem 0;
+  font-family: 'BrandonGrotesque-Medium';
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+/*------------------
+    wedding info
+------------------*/
+#wedding-info {
+  margin: 5rem 0;
+  padding: 2.5rem 1.5rem;
+  border: double rgba(0,0,0,.15);
+  text-align: center;
+}
+
+.date, .place, .attire {
+  font-family: 'BrandonGrotesque-Medium';
+  font-size: 2rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+
+
+/*------------------
+     registry
+------------------*/
+.registry {
+  margin-bottom: 5rem;
+  padding: 2.5rem 1.5rem;
+  border: double rgba(0,0,0,.15);
+}
+
+.registry img {
+  display: block;
+  max-width: 25rem;
+  margin: auto auto;
+}
+
+.button {
+  max-width: 15rem;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  border: .1rem solid #000000;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transition: all .15s linear;
+}
+
+.button span {
+  font-size: 1.8rem;
+}
+
+
+/*------------------
+    bridal party
+------------------*/
+#bridal-party {
+  text-align: center;
+}
+
+.bridal-party-member {
+  padding-bottom: 5rem;
+}
+
+.name {
+  font-family: 'BrandonGrotesque-Medium';
+  font-size: 1.6rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+}
+
+.role {
+  font-family: 'MrsEavesOT-Italic';
+  font-size: 1.8rem;
+}
