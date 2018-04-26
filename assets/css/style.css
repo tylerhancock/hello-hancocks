@@ -188,8 +188,9 @@ nav {
        footer
 ------------------*/
 footer {
+  position: relative;
   margin-top: 5rem;
-  margin-bottom: 8.5rem;
+  margin-bottom: 7rem;
   border-top: double rgba(0,0,0,.15);
 }
 
@@ -200,7 +201,8 @@ footer {
 }
 
 .hashtag {
-  margin: 1.5rem 0;
+  margin: 0;
+  padding: 1.5rem 0;
   font-family: 'BrandonGrotesque-Medium';
   font-size: 3rem;
   text-align: center;
@@ -238,6 +240,10 @@ footer {
   display: block;
   max-width: 25rem;
   margin: auto auto;
+}
+
+.registry-gallery-img {
+  padding-bottom: 5rem;
 }
 
 .button {
